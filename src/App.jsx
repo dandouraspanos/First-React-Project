@@ -1,6 +1,6 @@
 import { CORE_CONCEPTS, EXAMPLES } from './data';
 import Header from './components/Header/Header';
-import CoreConcept from './components/CoreConcepts/CoreConcept';
+import CoreConcept from './components/CoreConcepts/CoreConcepts';
 import TabButton from './components/TabButton/TabButton';
 import { useState } from 'react';
 function App() {
