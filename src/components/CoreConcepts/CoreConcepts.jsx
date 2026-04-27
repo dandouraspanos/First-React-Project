@@ -1,13 +1,15 @@
-import './CoreConcepts.css';
-// Separation of Concerns
-export default function CoreConcept({image, title, description}) {
-    // Props
-  return (
-    <li>
-      <img src={image} alt={image} />
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </li>
-  );
+import { CORE_CONCEPTS } from "../../data";
+import CoreConcept from './CoreConcept';
+export default function CoreConcepts() {
+    return (
+        <section id="core-concepts">
+            <h2>Time to get started!</h2>
+            <ul>
+                {
+                    CORE_CONCEPTS.map((conceptItem) =>
+                        <CoreConcept key={conceptItem.title} {...conceptItem} />)
+                }
+            </ul>
+        </section>
+    )
 }
-
